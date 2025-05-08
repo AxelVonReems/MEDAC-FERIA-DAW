@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FP DAW - ¡Crea el Futuro!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <img src="images/logo2.jpg" alt="Logo FP DAW" class="logo" />
+        </div>
+        <button class="menu-button" onclick="toggleMobileMenu()">Menu</button>
+      </div>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#asignaturas">Asignaturas</a>
+        <a href="#salidas">Salidas</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <nav class="mobile-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#asignaturas">Asignaturas</a>
+        <a href="#salidas">Salidas</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section id="inicio">
+      <h2>Bienvenido a FPGS DAW de Davante</h2>
+      <p style="text-align: center; max-width: 700px; margin: auto">
+        Aprende a desarrollar aplicaciones web, gestionar bases de datos y
+        dominar lenguajes de programación. El futuro digital se construye aquí.
+      </p>
+    </section>
+
+    <section id="asignaturas">
+      <h2>Asignaturas por Curso</h2>
+
+      <h3>Primer Curso</h3>
+      <div class="grid">
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Lenguajes de marcas</h3>
+          <p class="desc">HTML, XML, CSS... estructura y estilo web.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Entornos de desarrollo</h3>
+          <p class="desc">Herramientas, IDEs y metodologías ágiles.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Programación</h3>
+          <p class="desc">Algoritmos, Java, estructuras de datos.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Bases de datos</h3>
+          <p class="desc">Modelado y lenguaje SQL.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Sistemas informáticos</h3>
+          <p class="desc">Redes, hardware, sistemas operativos.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Formación y orientación laboral</h3>
+          <p class="desc">Derechos laborales, prevención riesgos.</p>
+        </div>
+      </div>
+
+      <h3>Segundo Curso</h3>
+      <div class="grid">
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Desarrollo web en entorno cliente</h3>
+          <p class="desc">JavaScript, React, UX/UI.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Desarrollo web en entorno servidor</h3>
+          <p class="desc">PHP, Node.js, seguridad, APIs.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Despliegue de aplicaciones web</h3>
+          <p class="desc">Hosting, servidores, Docker.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Diseño de interfaces web</h3>
+          <p class="desc">Accesibilidad, responsive, Figma.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Empresa e iniciativa emprendedora</h3>
+          <p class="desc">Plan de empresa, marketing, finanzas.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>FCT - Prácticas en empresa</h3>
+          <p class="desc">Formación real en empresas tecnológicas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="salidas">
+      <h2>Salidas Profesionales + Salarios</h2>
+      <div class="grid">
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Desarrollador Web Frontend</h3>
+          <p class="desc">Salario: 24.000–35.000€/año.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Desarrollador Web Backend</h3>
+          <p class="desc">Salario: 26.000–40.000€/año.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Administrador de Bases de Datos</h3>
+          <p class="desc">Salario: 28.000–42.000€/año.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Consultor/a TIC</h3>
+          <p class="desc">Salario: 30.000–45.000€/año.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Programador/a Freelance</h3>
+          <p class="desc">Salario: variable. Libertad y emprendimiento.</p>
+        </div>
+        <div class="card" onclick="toggleDesc(this)">
+          <h3>Especialista DevOps</h3>
+          <p class="desc">Salario: 35.000–50.000€/año.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos Reales</h2>
+      <p style="text-align: center">
+        Alumnos de DAW crean apps móviles, tiendas online, portfolios,
+        plataformas educativas y más.
+      </p>
+      <div class="qr">
+        <p>Escanea y mira ejemplos reales:</p>
+        <img src="qr-daw.png" alt="Código QR de proyectos" />
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p style="text-align: center">
+        ¿Tienes dudas o quieres más info?<br />
+        <strong>Email:</strong> madrid.albala@medac.es<br/>
+        <strong>Teléfono:</strong> 919 262 694
+      </p>
+    </section>
+
+    <footer>
+      © 2025 FP Desarrollo de Aplicaciones Web · Proyecto para ferias y jornadas
+      educativas
+    </footer>
+
+    <script>
+      function toggleDesc(card) {
+        card.classList.toggle("active");
+      }
+      function toggleMobileMenu() {
+        const mobileNav = document.querySelector('.mobile-nav');
+        mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+      }
+    </script>
+  </body>
+</html>
