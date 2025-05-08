@@ -18,7 +18,7 @@
     <header>
       <div class="header-content">
         <div class="logo-container">
-          <img src="images/logo2.jpg" alt="Logo FP DAW" class="logo" />
+          <img src="images/logoSite.jpg" alt="Logo FP DAW" class="logo" />
         </div>
         <button class="menu-button" onclick="toggleMobileMenu()">Menu</button>
       </div>
@@ -166,9 +166,25 @@
       function toggleDesc(card) {
         card.classList.toggle("active");
       }
+
+      // Menu button folding
       function toggleMobileMenu() {
         const mobileNav = document.querySelector('.mobile-nav');
-        mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+        const isVisible = mobileNav.style.display === 'flex';
+
+      // Toggle visibility
+      mobileNav.style.display = isVisible ? 'none' : 'flex';
+
+      // Attach click event to each link only once
+      if (!mobileNav.dataset.listenersAdded) {
+        const links = mobileNav.querySelectorAll('a');
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNav.style.display = 'none';
+            });
+          });
+          mobileNav.dataset.listenersAdded = "true";
+        }
       }
     </script>
   </body>
